@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="18dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:elevation="14dp">
+
+    <TextView
+        android:id="@+id/detailsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Protection Alert"
+        android:textColor="#0F172A"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/detailsSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Potentially suspicious"
+        android:textColor="#1E293B"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="This is a prototype result. Real product analysis will be connected later."
+        android:textColor="#475569"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Confidence"
+            android:textColor="#475569"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/detailsConfidenceValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="78 %"
+            android:textColor="#0F172A"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Indicators"
+        android:textColor="#0F172A"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/indicatorItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:lineSpacingExtra="4dp"
+        android:text="• Example indicator detected\n• Example warning signal\n• Verification required"
+        android:textColor="#334155"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/detailsCloseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="#E2E8F0"
+        android:gravity="center"
+        android:paddingVertical="10dp"
+        android:text="Close"
+        android:textColor="#0F172A"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+</LinearLayout>

@@ -18,7 +18,7 @@ class MockScanner {
     ];
 
     // Simple confidence mock
-    final confidence = 0.87;
+    const confidence = 0.87;
 
     return ScanResult(imagePath: imagePath, words: words, confidence: confidence);
   }
